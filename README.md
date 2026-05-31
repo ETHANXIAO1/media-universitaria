@@ -44,7 +44,7 @@ python -m http.server 8000
 2. Go to **Settings → Pages**.
 3. Under *Source*, choose the `main` branch and the `/ (root)` folder, then save.
 4. After a minute your app is live at
-   `https://<your-username>.github.io/media-universitaria/`.
+   `https://ethanxiao1.github.io/media-universitaria/`.
 
 ## 🧪 Tests
 
