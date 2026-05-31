@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Universitaria — Calcolatore</title>
+    <meta
+      name="description"
+      content="Calcola la media ponderata e aritmetica dei tuoi esami universitari e stima il voto di laurea in base 110."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>🎓 Media Universitaria</h1>
+        <p class="sottotitolo">
+          Inserisci i tuoi esami per calcolare la <strong>media ponderata</strong>,
+          la <strong>media aritmetica</strong> e una stima del
+          <strong>voto di laurea</strong> in base 110.
+        </p>
+      </header>
+
+      <!-- Pannello con i risultati -->
+      <section class="risultati" aria-label="Risultati">
+        <div class="card evidenziata">
+          <span class="etichetta">Media ponderata</span>
+          <span class="valore" id="media-ponderata">—</span>
+        </div>
+        <div class="card evidenziata">
+          <span class="etichetta">Voto di laurea (stima)</span>
+          <span class="valore" id="voto-laurea">—</span>
+        </div>
+        <div class="card">
+          <span class="etichetta">Media aritmetica</span>
+          <span class="valore" id="media-aritmetica">—</span>
+        </div>
+        <div class="card">
+          <span class="etichetta">Totale CFU</span>
+          <span class="valore" id="totale-cfu">0</span>
+        </div>
+        <div class="card">
+          <span class="etichetta">Numero esami</span>
+          <span class="valore" id="numero-esami">0</span>
+        </div>
+        <div class="card">
+          <span class="etichetta">Lodi</span>
+          <span class="valore" id="numero-lodi">0</span>
+        </div>
+      </section>
+
+      <!-- Tabella degli esami -->
+      <section class="tabella-contenitore">
+        <table>
+          <thead>
+            <tr>
+              <th>Esame</th>
+              <th>Voto</th>
+              <th>CFU</th>
+              <th class="col-lode">Lode</th>
+              <th class="col-azioni" aria-label="Azioni"></th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabella"></tbody>
+        </table>
+
+        <div class="azioni-tabella">
+          <button id="aggiungi" type="button" class="primario">+ Aggiungi esame</button>
+          <button id="azzera" type="button" class="secondario">Azzera tutto</button>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          I dati restano salvati solo nel tuo browser (non vengono inviati da nessuna parte).
+          Il voto di laurea è una <strong>stima</strong> della base di partenza
+          (media&nbsp;×&nbsp;110&nbsp;/&nbsp;30): non include i punti di tesi, carriera o bonus,
+          che cambiano da ateneo ad ateneo.
+        </p>
+        <p>
+          Progetto open source ·
+          <a href="https://github.com/your-username/media-universitaria">Codice su GitHub</a>
+          · Licenza MIT
+        </p>
+      </footer>
+    </main>
+
+    <!-- Prima i calcoli, poi la logica della pagina. -->
+    <script src="src/calc.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "media-universitaria",
+  "version": "1.0.0",
+  "description": "Calcolatore della media universitaria (ponderata e aritmetica) e stima del voto di laurea in base 110, per studenti universitari italiani.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "universita",
+    "media-ponderata",
+    "voto-di-laurea",
+    "cfu",
+    "calcolatore",
+    "studenti"
+  ],
+  "author": "Yuxuan Xiao",
+  "license": "MIT"
+}
